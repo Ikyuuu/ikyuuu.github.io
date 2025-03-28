@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projek Pertemuan 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu Navigasi -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#description">Tentang</a></li>
+            <li><a href="#highlights">Highlight</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Selamat Datang Di Gunung Bromo</h1>
+        <p>Tempat Wisata Terindah di Indonesia</p>
+        <button id="exploreBtn" class="btn">Jelajahi Sekarang</button>
+    </header>
+
+    <section id="description" class="section">
+        <h2>Tentang Gunung Bromo</h2>
+        <p>
+            Gunung Bromo adalah salah satu gunung berapi yang paling terkenal di Indonesia.  Terletak di Taman Nasional Bromo Tengger Semeru, gunung ini menawarkan pemandangan yang menakjubkan, terutama saat matahari terbit. Dengan lautan pasir yang luas dan kawah yang aktif, Bromo adalah tempat yang wajib dikunjungi.
+        </p>
+    </section>
+
+    <section id="highlights" class="section">
+        <h2>Highlight Wisata</h2>
+        <div class="highlight-container">
+            <div class="highlight-item">
+                <img src="./img/sunset.jpg" alt="Matahari Terbit">
+                <h3>Matahari Terbit</h3>
+                <p>Nikmati Pemandangan Matahari Terbit dari puncak Gunung Bromo</p>
+            </div>
+            <div class="highlight-item">
+                <img src="./img/sea of sand.jpg" alt="Matahari Terbit">
+                <h3>Pasir Lautan</h3>
+                <p>Eksplorasi lautan pasir yang luas dan memukau</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>Galeri</h2>
+        <div class="gallery-container">
+            <button class="gallery-nav" id="prev">&#8249</button>
+            <div class="gallery-wrapper">
+                <div class="gallery-images">
+                    <img src="./img/Gunung_Bromo_1.jpg" alt="Gunung Bromo 1">
+                    <img src="./img/Gunung_Bromo_2.jpg" alt="Gunung Bromo 2">
+                    <img src="./img/Gunung_Bromo_3.jpg" alt="Gunung Bromo 3">
+                    <img src="./img/Gunung_Bromo_4.jpg" alt="Gunung Bromo 1">
+                    <img src="./img/Gunung_Bromo_5.jpg" alt="Gunung Bromo 2">
+                    <img src="./img/Gunung_Bromo_6.jpg" alt="Gunung Bromo 3">
+                </div>
+            </div>
+            <button class="gallery-nav" id="next">&#8250</button>
+        </div>
+    </section>
+
+    <!-- Formulir Kontak -->
+    <section id="contact" class="section">
+        <h2>Hubungi Kami</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+            <div class="social-media">
+                <a href="#"><i data-feather="facebook"></i></a>
+                <a href="#"><i data-feather="instagram"></i></a>
+                <a href="#"><i data-feather="twitter"></i></a>
+                <a href="#"><i data-feather="phone"></i></a>
+            </div>
+            <p>&copy; 2025 Wisata Alam - Gunung Bromo</p>
+    </footer>
+
+    <!-- Script Javascript -->
+    <script src="script.js"></script>
+
+    <!-- Feather Icon -->
+    <script>
+        feather.replace();
+      </script>
+</body>
+</html>

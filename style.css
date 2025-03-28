@@ -1,0 +1,300 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Section */
+.navbar{
+    background-color: #2c3e50;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-list{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header{
+    background: url(./img/bg_bromo.jpg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+nav{
+    background-color: #2c3e50;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Hero Section */
+.hero{
+    background: url(./img/bg_bromo.jpg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h1{
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2{
+    color: #2c3e50;
+}
+
+.btn{
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #d35400;
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Highlight Section */
+.highlight-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.highlight-item{
+    width: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.highlight-item img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Gallery Container */
+.gallery-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    margin: auto;
+}
+
+.gallery-wrapper{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-images {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Gallery Navigation */
+.gallery-nav {
+    background-color: rgba(44, 62, 80, 0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s ease;
+    z-index: 1000;
+}
+
+.gallery-nav:hover{
+    background-color: rgba(211, 84, 0, 0.8);
+}
+
+#prev{
+    left: 10px;
+}
+
+#next{
+    right: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button{
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer{
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.social-media{
+    margin-top: 5px;
+}
+
+.social-media a{
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover{
+    color: #ffdd57;
+}
+
+
+/* ======================== */
+/*  Media Query Responsive  */
+/* ======================== */
+
+/* Desktop PC */
+@media screen and (min-width: 1200px) {
+    .gallery-container{
+        max-width: 1000px;
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 1199px){
+    .gallery-container{
+        max-width: 800px;
+    }
+
+    .gallery-images img{
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .gallery-container{
+        max-width: 700px;
+    }
+
+    .gallery-images{
+        gap: 5px;
+    }
+
+    .gallery-images img{
+        max-width: 700px;
+    }
+}
+
+/* Handphone (Mode Landscape) */
+@media screen and (max-width: 767px){
+    .gallery-container{
+        max-width: 500px;
+    }
+
+    .gallery-images img{
+        max-width: 500px;
+    }
+
+    .gallery-nav{
+        font-size: 1.2em;
+        padding: 8px;
+    }
+}
+
+
+/* Handphone (Mode Potrait) */
+@media screen and (max-width: 480px){
+    .gallery-container{
+        max-width: 90%;
+    }
+
+    .gallery-images img{
+        max-width: 100%;
+    }
+
+    .gallery-nav{
+        font-size: 1em;
+        padding: 6px;
+    }
+}
